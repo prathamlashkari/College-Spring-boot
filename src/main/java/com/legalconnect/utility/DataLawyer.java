@@ -3,11 +3,14 @@ package com.legalconnect.utility;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.legalconnect.model.lawyer;
 
+@Component
 public class DataLawyer {
 
-  public static List<lawyer> getlawyersData() {
+  public List<lawyer> getlawyersData() {
     List<lawyer> lawyerList = new ArrayList<>();
 
     lawyer lawyer1 = new lawyer();
