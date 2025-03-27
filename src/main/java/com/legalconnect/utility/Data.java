@@ -2,8 +2,10 @@ package com.legalconnect.utility;
 
 import java.util.ArrayList;
 
+import com.legalconnect.model.lawyer;
+
 public class Data {
 
-  ArrayList<Integer> lawyer = new ArrayList<>();
+  ArrayList<lawyer> lawyer = new ArrayList<>();
 
 }
