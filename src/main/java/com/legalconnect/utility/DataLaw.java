@@ -3,11 +3,14 @@ package com.legalconnect.utility;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.legalconnect.model.laws;
 
+@Component
 public class DataLaw {
 
-  public static List<laws> getlawsData() {
+  public List<laws> getlawsData() {
     List<laws> lawsList = new ArrayList<>();
 
     laws law1 = new laws();
