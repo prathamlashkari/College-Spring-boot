@@ -1,0 +1,23 @@
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.home-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.home-image {
+  width: 80%;
+  border-radius: 10px;
+}
