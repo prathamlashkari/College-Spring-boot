@@ -1,0 +1,112 @@
+.lawyer-container {
+  padding: 20px;
+}
+
+.lawyer-search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.lawyer-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.lawyer-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.lawyer-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.lawyer-buttons button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.call-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.video-call-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Popup Styling */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.popup-buttons button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: green;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: red;
+  color: white;
+}
+
+.popup-box input[type="date"],
+.popup-box input[type="time"] {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.popup-box p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.lawyer-search-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.lawyer-search-filters input {
+  padding: 8px;
+  width: 100%;
+  font-size: 16px;
+}
