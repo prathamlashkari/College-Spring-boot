@@ -1,7 +1,7 @@
 /* Navbar Container */
 .navbar {
   background-color: #1e3a8a; /* Dark Blue */
-  padding: 15px 30px;
+  padding: 0px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
