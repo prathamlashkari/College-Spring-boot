@@ -6,19 +6,39 @@ import { lawyers } from "../constant/Lawyer";
 
 const Lawyer = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [searchExperience, setSearchExperience] = useState("");
+  const [searchFee, setSearchFee] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const [bookingType, setBookingType] = useState("");
   const [selectedLawyer, setSelectedLawyer] = useState(null);
-  const [selectedDate, setSelectedDate] = useState(""); // Selected Date
-  const [selectedTime, setSelectedTime] = useState(""); // Selected Time
-  const [selectedDay, setSelectedDay] = useState(""); // Selected Day
+  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedTime, setSelectedTime] = useState("");
+  const [selectedDay, setSelectedDay] = useState("");
 
-  // Filter lawyers based on specialty
-  const filteredLawyers = lawyers.filter((lawyer) =>
-    lawyer.specialty.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredLawyers = lawyers.filter((lawyer) => {
+    const experienceNumber = parseInt(lawyer.experience.replace(/\D/g, ""), 10);
+    const callPriceNumber = parseInt(lawyer.callPrice.replace(/\D/g, ""), 10);
+    const videoCallPriceNumber = parseInt(
+      lawyer.videoCallPrice.replace(/\D/g, ""),
+      10
+    );
 
-  // Function to handle booking confirmation
+    const matchesSpecialty = lawyer.specialty
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+
+    const matchesExperience = searchExperience
+      ? experienceNumber >= parseInt(searchExperience, 10)
+      : true;
+
+    const matchesFee = searchFee
+      ? callPriceNumber <= parseInt(searchFee, 10) ||
+        videoCallPriceNumber <= parseInt(searchFee, 10)
+      : true;
+
+    return matchesSpecialty && matchesExperience && matchesFee;
+  });
+
   const handleBooking = (lawyer, type) => {
     setSelectedLawyer(lawyer);
     setBookingType(type);
@@ -28,7 +48,6 @@ const Lawyer = () => {
     setSelectedDay("");
   };
 
-  // Function to update the selected date and determine the day
   const handleDateChange = (event) => {
     const dateValue = event.target.value;
     setSelectedDate(dateValue);
@@ -56,14 +75,27 @@ const Lawyer = () => {
 
   return (
     <div className="lawyer-container">
-      {/* Search Bar */}
-      <input
-        type="text"
-        className="lawyer-search"
-        placeholder="Search by specialty..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
+      {/* Search Filters */}
+      <div className="lawyer-search-filters">
+        <input
+          type="text"
+          placeholder="Search by specialty..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <input
+          type="number"
+          placeholder="Min Experience (years)..."
+          value={searchExperience}
+          onChange={(e) => setSearchExperience(e.target.value)}
+        />
+        <input
+          type="number"
+          placeholder="Max Fee ($)..."
+          value={searchFee}
+          onChange={(e) => setSearchFee(e.target.value)}
+        />
+      </div>
 
       {/* Lawyer Cards */}
       <div className="lawyer-cards">
@@ -101,7 +133,7 @@ const Lawyer = () => {
             </div>
           ))
         ) : (
-          <p>No lawyers found for this specialty.</p>
+          <p>No lawyers found matching your criteria.</p>
         )}
       </div>
 
