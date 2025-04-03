@@ -1,12 +1,13 @@
 import React from "react";
 import "../style/Profile.css";
-
+import img from "../assets/images.png";
+import { lawyerUser, normalUser } from "../constant/Profile";
 const Profile = () => {
-  const user = "lawyer";
+  const user = lawyerUser;
   return (
     <div className="profile-container">
       {/* Profile Image */}
-      <img src={user.image} alt={user.name} className="profile-image" />
+      <img src={img} alt={user.name} className="profile-image" />
 
       {/* User Details */}
       <h2>{user.name}</h2>
