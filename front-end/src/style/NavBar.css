@@ -15,7 +15,6 @@
   color: white;
 }
 
-/* Navbar Links */
 .navbar-links {
   list-style: none;
   display: flex;
@@ -34,7 +33,7 @@
 }
 
 .navbar-links a:hover {
-  color: #ffcc00; /* Gold on hover */
+  color: #ffcc00;
 }
 
 /* Responsive Design */
