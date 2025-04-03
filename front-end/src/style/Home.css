@@ -1,0 +1,64 @@
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f4f4f4;
+  gap: 1rem;
+}
+
+.home-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e3a8a; /* Dark blue */
+  padding: 40px;
+  border-radius: 20rem;
+}
+
+.home-image {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Section - Text */
+.home-right {
+  flex: 1;
+  padding: 40px;
+  background-color: #ffffff; /* White */
+  border-radius: 0 10px 10px 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.home-right h1 {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+.home-right p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* CTA Button */
+.get-started-btn {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #142254;
+}
