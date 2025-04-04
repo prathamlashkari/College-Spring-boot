@@ -1,0 +1,47 @@
+.acts-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.search-section {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-section input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.search-section button {
+  padding: 0.6rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-section button:hover {
+  background-color: #0056b3;
+}
+
+.typing-section {
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.typed-text {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
