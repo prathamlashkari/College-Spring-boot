@@ -1,4 +1,4 @@
-const acts = [
+export const acts = [
   {
     category: "land",
     title: "Land Acquisition Act",
