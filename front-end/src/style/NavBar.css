@@ -15,6 +15,18 @@
   color: white;
 }
 
+.navbar-logo img {
+  height: 100%;
+  max-height: 70px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.05);
+}
+
 .navbar-links {
   list-style: none;
   display: flex;
