@@ -33,7 +33,6 @@ export const userApi = createApi({
   }),
 });
 
-// Export hooks
 export const {
   useGetNotificationsQuery , 
   useGetUserProfileByIdQuery , 
