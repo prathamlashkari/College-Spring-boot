@@ -1,12 +1,107 @@
-# React + Vite
+# 🧾 Legal Acts Explorer & Lawyer Connect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Short Summary
 
-Currently, two official plugins are available:
+A modern web application that allows users to **search and read legal acts** by category and **connect with suitable lawyers** for legal advice via **video or phone calls**. It features an engaging user experience using **typewriter animation** and offers a lawyer discovery platform for better legal support.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 What Does It Do?
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔍 Search for legal acts by category (e.g., land, environment, consumer)
+- 🖋️ View act content with typewriter animation for improved readability
+- 👨‍⚖️ Discover lawyers by specialization (criminal, civil, consumer, etc.)
+- 📞 Schedule a phone or video consultation with lawyers
+- 📅 View lawyer availability and confirm appointments
+
+---
+
+## ✨ Key Features
+
+- Smart act search with auto display
+- Animated legal content presentation
+- Lawyer directory with advanced filtering
+- Call/Video scheduling with availability check
+- Clean and responsive UI
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: React.js, JavaScript, CSS
+- **Animation**: `react-simple-typewriter`
+- **State Management**: React Hooks
+- **Backend (optional)**: Node.js, Express.js (for scheduling & authentication)
+
+---
+
+## 📁 Folder Structure
+
+src/
+│
+├── components/
+│ ├── Navbar.jsx
+│
+├── constant/
+│ ├── Act.js
+│ ├── LawyerData.js
+| ├── Profile.js
+│
+├── style/
+│ ├── Act.css
+│ ├── Contact.jsx
+│ ├── Home.css
+│ ├── Lawyer.jsx
+│ ├── Profile.css
+│ ├── Navbar.css
+|
+├── Page/
+│ ├── Act.jsx
+│ ├── Contact.jsx
+│ ├── Home.jsx
+│ ├── Lawyer.jsx
+│ ├── Profile.jsx
+│
+├── App.jsx
+└── main.jsx
+
+---
+
+## 🧑‍💻 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/prathamlashkari/College-Spring-boot.git
+cd legal-acts-lawyer-connect
+```
+
+## 📦 Install Dependencies
+
+```bash
+cd /front-end
+npm install
+npm run dev
+```
+
+## ✅ Future Enhancements
+
+### 🔐 Add user authentication (JWT)
+
+### ⭐ Enable lawyer reviews & ratings
+
+### 💳 Payment integration for premium consultations
+
+### 🗓️ Calendar sync with Gmail/Outlook
+
+## 🤝 Contributing
+
+Feel free to fork the project and submit pull requests. All contributions are welcome!
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
+
+## 👨‍💻 Developed By
+
+Pratham Lashkari and team 💼
