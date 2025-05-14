@@ -81,4 +81,27 @@ cd legal-acts-lawyer-connect
 ```bash
 cd /front-end
 npm install
+npm run dev
 ```
+
+## ✅ Future Enhancements
+
+### 🔐 Add user authentication (JWT)
+
+### ⭐ Enable lawyer reviews & ratings
+
+### 💳 Payment integration for premium consultations
+
+### 🗓️ Calendar sync with Gmail/Outlook
+
+## 🤝 Contributing
+
+Feel free to fork the project and submit pull requests. All contributions are welcome!
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
+
+## 👨‍💻 Developed By
+
+Pratham Lashkari and team 💼
