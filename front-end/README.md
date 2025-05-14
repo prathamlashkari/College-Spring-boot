@@ -36,3 +36,31 @@ A modern web application that allows users to **search and read legal acts** by 
 ---
 
 ## 📁 Folder Structure
+
+src/
+│
+├── components/
+│ ├── Navbar.jsx
+│
+├── constant/
+│ ├── Act.js
+│ ├── LawyerData.js
+| ├── Profile.js
+│
+├── style/
+│ ├── Act.css
+│ ├── Contact.jsx
+│ ├── Home.css
+│ ├── Lawyer.jsx
+│ ├── Profile.css
+│ ├── Navbar.css
+|
+├── Page/
+│ ├── Act.jsx
+│ ├── Contact.jsx
+│ ├── Home.jsx
+│ ├── Lawyer.jsx
+│ ├── Profile.jsx
+│
+├── App.jsx
+└── main.jsx
