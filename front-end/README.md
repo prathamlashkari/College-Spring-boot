@@ -64,3 +64,21 @@ src/
 │
 ├── App.jsx
 └── main.jsx
+
+---
+
+## 🧑‍💻 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/prathamlashkari/College-Spring-boot.git
+cd legal-acts-lawyer-connect
+```
+
+## 📦 Install Dependencies
+
+```bash
+cd /front-end
+npm install
+```
